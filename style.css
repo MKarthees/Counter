@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geo", sans-serif;
+}
+:root{
+    --bg-color-one: #D3D9D4;
+    --bg-color-two: #748D92;
+    --bg-color-three: #2E3944;
+    --font-color:#212A31;
+    --highlight:#124E66;
+}
+.container{
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-one);
+}
+.container h1{
+    width: 100%;
+    text-align: center;
+    font-size: clamp(6rem,10vw,18rem);
+    color: var(--font-color);
+    margin: 10px;
+}
+.container h4{
+    width: 100%;
+    text-align: center;
+    font-size: clamp(16px,7vw,20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--font-color);
+}
+.container h4 span{
+    font-size: clamp(20px,13vw,40px);
+    font-weight: bolder;
+    margin-left: 5px;
+    color: var(--highlight);
+}
+.controls{
+    width: 100%;
+    display: flex;
+    gap: clamp(20px,10vw,50px);
+    justify-content: center;
+    align-items: center;
+}
+.controls i{
+    cursor: pointer;
+    font-size: clamp(15px,10vw,30px);
+    padding:clamp(5px,10px,30px) ;
+    color: var(--font-color);
+    background-color: var(--bg-color-two);
+    border-radius: 50%;
+}
+.controls i:nth-child(2){
+    font-size: clamp(30px,16vw,50px);
+}
