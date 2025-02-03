@@ -56,7 +56,7 @@
     cursor: pointer;
     font-size: clamp(15px,10vw,30px);
     padding:clamp(5px,10px,30px) ;
-    color: var(--font-color);
+    color: #fff;
     background-color: var(--bg-color-two);
     border-radius: 50%;
 }
