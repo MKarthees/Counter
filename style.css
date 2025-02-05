@@ -6,11 +6,11 @@
     font-family: "Geo", sans-serif;
 }
 :root{
-    --bg-color-one: #D3D9D4;
-    --bg-color-two: #748D92;
-    --bg-color-three: #2E3944;
-    --font-color:#212A31;
-    --highlight:#124E66;
+    --bg-color-one: #F1F2F4;
+    --bg-color-two: #DCDFE4;
+    --font-color:#172B4D;
+    --highlight:#091E42;
+    --icon-color:#101214;
 }
 .container{
     width: 100%;
@@ -22,11 +22,22 @@
     background-color: var(--bg-color-one);
 }
 .container h1{
-    width: 100%;
     text-align: center;
     font-size: clamp(6rem,10vw,18rem);
     color: var(--font-color);
-    margin: 10px;
+    background-color: var(--bg-color-two);
+    padding: 0px 20px;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+}
+.container h2{
+    text-align: center;
+    font-size: clamp(1.2rem,5vw,2rem);
+    color: var(--font-color);
+    background-color: var(--bg-color-two);
+    padding: 5px 20px;
+    border-radius: 1rem;
+    margin-bottom: 30px;
 }
 .container h4{
     width: 100%;
@@ -52,14 +63,28 @@
     justify-content: center;
     align-items: center;
 }
-.controls i{
+.controls i:nth-child(1){
     cursor: pointer;
-    font-size: clamp(15px,10vw,30px);
-    padding:clamp(5px,10px,30px) ;
-    color: #fff;
+    font-size: clamp(15px,22px,25px);
+    padding:clamp(5px,5vw,15px) ;
+    color:#F15B50;
     background-color: var(--bg-color-two);
-    border-radius: 50%;
+    border-radius: 1rem;
+    font-weight: bold;
 }
 .controls i:nth-child(2){
-    font-size: clamp(30px,16vw,50px);
+    font-size: clamp(33px,10vw,40px);
+    padding:clamp(15px,10px,40px) ;
+    color:var(--font-color);
+    background-color: var(--bg-color-two);
+    border-radius: 1rem;
+}
+.controls i:nth-child(3){
+    cursor: pointer;
+    font-size: clamp(15px,22px,25px);
+    padding:clamp(5px,5vw,15px) ;
+    color:#2ABB7F;
+    background-color: var(--bg-color-two);
+    border-radius: 1rem;
+    font-weight: bold;
 }
